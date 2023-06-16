@@ -11,7 +11,7 @@ export const UserProvider = ({ children }) => {
     const fetchUsers = async () => {
       try {
         const response = await fetch(
-          "https://jsonplaceholder.typicode.com/1users"
+          "https://jsonplaceholder.typicode.com/users"
         );
         const data = await response.json();
         setUsers(data);
